@@ -1,0 +1,14 @@
+.home {
+    height: 100%;
+    background-color: #3C3C3C;
+    /*display: flex;*/
+}
+
+.contents-wrapper {
+    background-color: #3C3C3C;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex: 1;
+    overflow: auto;
+}
