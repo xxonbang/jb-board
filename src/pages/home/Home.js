@@ -5,6 +5,7 @@ import CategoryCards from './cate-cards';
 import mockData from './mock-card-data';
 
 function Home() {
+
   return (
     <div className='home'>
       <div className="contents-wrapper">

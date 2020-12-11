@@ -11,13 +11,13 @@ export const SideBarData = [
   },
   {
     title: 'Humors',
-    path: '/humor',
+    path: '/board/humor',
     icon: <AiIcons.AiOutlineSmile />,
     cName: 'nav-text'
   },
   {
     title: 'Society',
-    path: '/society',
+    path: '/board/society',
     icon: <BiIcons.BiNews />,
     cName: 'nav-text'
   }

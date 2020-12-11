@@ -21,7 +21,7 @@ function Navbar() {
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSideBar} />
           </Link>
-          <span className='board-title'>JB-Board</span>
+          <Link to="/" className='board-title'>JB-Board</Link>
           <FaIcons.FaSignInAlt className="sign-in-icon" />
         </div>
         {/*left side nav bar*/}

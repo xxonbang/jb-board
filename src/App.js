@@ -2,8 +2,8 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
-import Humor from './pages/Humor';
-import Society from './pages/Society';
+import Humor from './pages/board/Humor';
+import Society from './pages/board/Society';
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/humor' component={Humor} />
-          <Route path='/society' component={Society} />
+          <Route path='/board/humor' component={Humor} />
+          <Route path='/board/society' component={Society} />
         </Switch>
       </Router>
     </div>
