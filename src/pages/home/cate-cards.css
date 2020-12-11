@@ -12,3 +12,14 @@
 .card-title {
     font-size: 2rem;
 }
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        color: black;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+}

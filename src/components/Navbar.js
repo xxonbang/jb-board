@@ -13,7 +13,9 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#F27935'}}>
+      {/*dimmed page 부분*/}
+      <div className={sideBar ? 'dimmed-page' : ''} onClick={showSideBar}></div>
+      <IconContext.Provider value={{ color: '#F27935' }}>
         {/*상단 navbar (header)*/}
         <div className="navbar">
           <Link to="#" className="menu-bars">

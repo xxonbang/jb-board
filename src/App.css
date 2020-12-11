@@ -28,10 +28,6 @@ body {
   /*background-color: #3C3C3C;*/
 }
 
-.router-contents-wrapper {
-  height: 100%
-}
-
 .humor, .society {
   display: flex;
   height: 90vh;

@@ -5,6 +5,7 @@
 }
 
 .contents-wrapper {
+    height: 100%;
     background-color: #3C3C3C;
     display: flex;
     flex-wrap: wrap;
