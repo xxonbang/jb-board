@@ -1,10 +1,14 @@
 import React from 'react';
+import BoardTemplate from '../board-template/board-template'
+
+import mockPostListData from '../board-template/mock-post-list-data';
 
 function Humor() {
   return (
-    <div className='humor'>
-      <h1>Humor!!</h1>
-    </div>
+    <>
+      <BoardTemplate postData={mockPostListData}>
+      </BoardTemplate>
+    </>
   )
 }
 

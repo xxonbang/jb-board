@@ -1,0 +1,42 @@
+.page-wrapper {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.inner-page-wrapper {
+    max-height: 80%;
+    max-width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.page-icon {
+    margin-right: 1rem;
+}
+
+.page-title {
+    margin-bottom: 2rem;
+}
+
+/*게시글 list div*/
+.post-list {}
+
+/*게시글 제목*/
+.post-title {
+    list-style: none;
+    border-bottom: solid 1px #3C3C3C;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+
+    /*긴 제목 말줄임 처리*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
