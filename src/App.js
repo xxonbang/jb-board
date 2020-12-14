@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Humor from './pages/board/Humor';
 import Society from './pages/board/Society';
+import PostView from './pages/post-view/post-view';
 
 function App() {
   return (
@@ -12,8 +13,10 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/board/humor' component={Humor} />
+          <Route exact path='/board/humor' component={Humor} />
+          <Route exact path={'/board/humor/:no'} component={PostView} />
           <Route path='/board/society' component={Society} />
+          {/*<Route path='/view' component={PostView} />*/}
         </Switch>
       </Router>
     </div>

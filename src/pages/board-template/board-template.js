@@ -12,7 +12,7 @@ function BoardTemplate( {postData} ) {
             {postData.post_list.map((item, index) => {
               return (
                 <li key={index} className="post-title">
-                  <Link to={item.post_no}>
+                  <Link to={`/board/humor/${item.post_no}`}>
                     <span>{item.post_title}</span>
                   </Link>
                 </li>

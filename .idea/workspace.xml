@@ -32,8 +32,9 @@
       <change afterPath="$PROJECT_DIR$/../hist-message/src/pages/home/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hist-message/src/parts/footer/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hist-message/src/parts/header/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/board-template/board-template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/board-template/mock-post-list-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/post-view/mock-post-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/post-view/post-view.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/post-view/post-view.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ps-board/src/pages/home/cate-cards.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ps-board/src/pages/home/mock-card-data.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/.idea/.gitignore" afterDir="false" />
@@ -50,8 +51,9 @@
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/javascript/test1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/board-template/board-template.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/board-template/board-template.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/board-template/board-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/board-template/board-template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/board/Humor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/board/Humor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.idea/workspace.xml" afterDir="false" />
@@ -72,8 +74,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -137,7 +139,7 @@
       <workItem from="1607652864406" duration="8237000" />
       <workItem from="1607907212911" duration="472000" />
       <workItem from="1607907890169" duration="3392000" />
-      <workItem from="1607921172531" duration="2356000" />
+      <workItem from="1607921172531" duration="7353000" />
     </task>
     <servers />
   </component>
