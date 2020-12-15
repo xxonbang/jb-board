@@ -13,6 +13,8 @@
     font-size: 2rem;
 }
 
+
+/*mobile 화면 고려*/
 @media (max-width: 480px) {
     .card {
         width: 100%;

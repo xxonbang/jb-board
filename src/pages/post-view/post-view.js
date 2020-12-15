@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './post-view.css'
 import * as FiIcons from "react-icons/fi";
 
@@ -6,8 +6,15 @@ import mockPostViewData from './mock-post-view'
 
 function PostView() {
 
-  const thumbsUp = () => {alert('박종우 쟝쟝맨!')}
-  const thumbsDown = () => {alert('박종우 메롱!')}
+  const [upCount, setUpCount] = useState(100);
+  const [downCount, setDownCount] = useState(20);
+
+  const thumbsUp = () => {
+    setUpCount(upCount + 1);
+  }
+  const thumbsDown = () => {
+    setDownCount(downCount + 1);
+  }
 
   return (
     <>
@@ -21,14 +28,14 @@ function PostView() {
             {mockPostViewData.reply}
           </div>
           <div className="thumb-icons">
-            <div className="thumbs-up">
-              <FiIcons.FiThumbsUp onClick={thumbsUp} />
+            <div className="thumbs-up" onClick={thumbsUp}>
+              <FiIcons.FiThumbsUp />
             </div>
-            <span>100</span>
-            <div className="thumbs-down">
-              <FiIcons.FiThumbsDown onClick={thumbsDown} />
+            <span>{upCount}</span>
+            <div className="thumbs-down" onClick={thumbsDown}>
+              <FiIcons.FiThumbsDown />
             </div>
-            <span>20</span>
+            <span>{downCount}</span>
           </div>
         </div>
       </div>
