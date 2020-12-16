@@ -176,8 +176,8 @@
 /*mobile 화면 고려*/
 @media (max-width: 480px) {
     .sign-in-modal {
-        min-height: 70%;
-        max-height: 70%;
+        min-height: 80%;
+        max-height: 80%;
         min-width: 90%;
         max-width: 90%;
 
