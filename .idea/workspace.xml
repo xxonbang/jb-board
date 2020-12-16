@@ -32,9 +32,6 @@
       <change afterPath="$PROJECT_DIR$/../hist-message/src/pages/home/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hist-message/src/parts/footer/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hist-message/src/parts/header/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/image/google-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/image/kakao-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ps-board/src/pages/home/cate-cards.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ps-board/src/pages/home/mock-card-data.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/.idea/.gitignore" afterDir="false" />
@@ -49,10 +46,8 @@
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/database/test1.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/etc/test1.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/javascript/test1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.idea/workspace.xml" afterDir="false" />
@@ -144,7 +139,7 @@
       <workItem from="1607930234810" duration="9567000" />
       <workItem from="1608009432710" duration="2609000" />
       <workItem from="1608012967353" duration="3081000" />
-      <workItem from="1608017942921" duration="8799000" />
+      <workItem from="1608017942921" duration="9253000" />
     </task>
     <servers />
   </component>
