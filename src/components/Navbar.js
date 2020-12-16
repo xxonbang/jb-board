@@ -9,9 +9,6 @@ import SignInModal from './sign-in-modal/sign-in-modal';
 
 function Navbar() {
 
-  // 'findDOMNode is deprecated in StrictMode.' error 제거 목적의 createRef 활용
-  // const wrapper = createRef();
-
   const [sideBar, setSideBar] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -40,6 +37,8 @@ function Navbar() {
           <div className="sign-in" onClick={openSignInModal}>
             <FaIcons.FaSignInAlt className="sign-in-icon" />
           </div>
+          {/*로그인 모달*/}
+          {isModalOpen ? <SignInModal isModalOpen={isModalOpen} close={closeSignInModal} /> : null}
         </div>
         {/*left side nav bar*/}
         <nav className={sideBar ? 'nav-menu active' : 'nav-menu'}>
@@ -62,7 +61,6 @@ function Navbar() {
           </ul>
         </nav>
       </IconContext.Provider>
-      <SignInModal isModalOpen={isModalOpen} close={closeSignInModal} />
     </>
   )
 }
