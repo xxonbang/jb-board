@@ -174,19 +174,50 @@
 
 
 /*mobile 화면 고려*/
-@media (max-width: 480px) {
+/* 아이폰 XS 기준 */
+/* 2436x1125px at 458ppi */
+@media only screen
+and (device-width : 375px)
+and (device-height : 812px)
+and (-webkit-device-pixel-ratio : 3) {
     .sign-in-modal {
-        min-height: 85%;
-        max-height: 85%;
+        min-height: 80%;
+        max-height: 80%;
         min-width: 90%;
         max-width: 90%;
 
         display: flex;
         flex-direction: column;
         flex: 1;
+
+        padding: 1rem;
+
+        /*phone safety area 및 iphone XS 의 웹브라우저(safari) 의 네비게이션 고정영역에 대한 css 작업*/
+        padding-top: calc(constant(safe-area-inset-top) + 1rem);
+        padding-top: calc(env(safe-area-inset-top) + 1rem);
+
+        padding-bottom: calc(constant(safe-area-inset-bottom) + 1rem);
+        padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
     }
 
     .body {
         padding: .25rem .25rem .25rem .25rem;
     }
 }
+
+/*@media (max-width: 480px) {*/
+/*    .sign-in-modal {*/
+/*        min-height: 85%;*/
+/*        max-height: 85%;*/
+/*        min-width: 90%;*/
+/*        max-width: 90%;*/
+
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        flex: 1;*/
+/*    }*/
+
+/*    .body {*/
+/*        padding: .25rem .25rem .25rem .25rem;*/
+/*    }*/
+/*}*/

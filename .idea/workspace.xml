@@ -46,6 +46,7 @@
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/database/test1.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/etc/test1.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/javascript/test1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.idea/vcs.xml" afterDir="false" />
@@ -138,7 +139,7 @@
       <workItem from="1607930234810" duration="9567000" />
       <workItem from="1608009432710" duration="2609000" />
       <workItem from="1608012967353" duration="3081000" />
-      <workItem from="1608017942921" duration="9495000" />
+      <workItem from="1608017942921" duration="11151000" />
     </task>
     <servers />
   </component>
