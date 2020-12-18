@@ -41,15 +41,50 @@ class Signup extends React.Component{
     }
   }
 
+  //TODO: ※ 비교할 때, state 값과 state 값을 비교하면 새로 변경 된 state 값은 lifecycle 및 render 시점 때문에 변경 이전의 값을 가져옴
+  //TODO: ※ setState 는 모든 함수가 실행되고 나서 마지막에 실행되는 것처럼 보임
+  //TODO: ※ 지금 막 입력한 값(입력은 되었으나 아직 state 에 저장되기 전 상태임)을 가지고 비교해야 실제로 지금 막 입력한 값을 사용할 수 있음
   pwValidator = (inputData) => {
+    this.setState({formData: {...this.state.formData, password: inputData}});
+    if (this.state.formData.checkPassword) {
+      if (inputData !== this.state.formData.checkPassword) {
+        this.setState({isError: {...this.state.isError, checkPassword: false}});
+      } else if (inputData === this.state.formData.checkPassword) {
+        this.setState({isError: {...this.state.isError, checkPassword: true}});
+      }
+    }
+  }
+
+  pwCheckValidator = (inputData) => {
+    this.setState({formData: {...this.state.formData, checkPassword: inputData}});
     if (inputData !== this.state.formData.password) {
       console.log('pw not matched')
       this.setState({isError: {...this.state.isError, checkPassword: false}});
-    } else {
+    } else if (inputData === this.state.formData.password) {
       this.setState({isError: {...this.state.isError, checkPassword: true}});
-      this.setState({formData: {...this.state.formData, checkPassword: inputData}});
     }
   }
+
+  // 2개 동시에 설정하는 fn
+//   // input 에 입력된 value -> state 에 할당
+//   this.setState({formData: {...this.state.formData, [inputData.id]: inputData.value}});
+//   // 조건에 따른 '비밀번호 확인' input-box 만 validation 처리
+//   if (this.state.formData.password !== this.state.formData.checkPassword) {
+//   console.log('pw not matched')
+//   this.setState({isError: {...this.state.isError, checkPassword: false}});
+// } else {
+//   this.setState({isError: {...this.state.isError, checkPassword: true}});
+// }
+
+  // pwValidator = (inputData) => {
+  //   this.setState({formData: {...this.state.formData, checkPassword: inputData}});
+  //   if (inputData !== this.state.formData.password) {
+  //     console.log('pw not matched')
+  //     this.setState({isError: {...this.state.isError, checkPassword: false}});
+  //   } else {
+  //     this.setState({isError: {...this.state.isError, checkPassword: true}});
+  //   }
+  // }
 
   test = () => {
     console.log(this.state);
@@ -80,7 +115,9 @@ class Signup extends React.Component{
                   className="form-control"
                   id="password"
                   placeholder="비밀번호"
-                  onChange={e => this.setState({formData: {password: e.target.value}})}
+                  onChange={e => this.pwValidator(e.target.value)}
+                  // onChange={e => this.setState({formData: {password: e.target.value}})}
+                  autoComplete="off"
                 />
               </div>
               <div className="form-group">
@@ -90,7 +127,8 @@ class Signup extends React.Component{
                   // className={`form-control ${this.state.errors.includes('checkPassword') ? 'is-invalid' : 'is-valid'}`}
                   id="checkPassword"
                   placeholder="비밀번호 확인"
-                  onChange={e => this.pwValidator(e.target.value)}
+                  onChange={e => this.pwCheckValidator(e.target.value)}
+                  autoComplete="off"
                 />
               </div>
               <div className="form-group">
