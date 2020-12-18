@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8611fd7f-289a-42a7-93a9-e594ed5d289a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/signup/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
     </list>
@@ -103,7 +99,7 @@
       <workItem from="1608017942921" duration="40704000" />
       <workItem from="1608188266350" duration="20186000" />
       <workItem from="1608280699295" duration="290000" />
-      <workItem from="1608281004153" duration="4296000" />
+      <workItem from="1608281004153" duration="4893000" />
     </task>
     <servers />
   </component>
