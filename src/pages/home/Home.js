@@ -8,7 +8,7 @@ function Home() {
 
   return (
     <div className='home'>
-      <div className="contents-wrapper">
+      <div className="home-contents-wrapper">
         {mockData.map((data, index) => <CategoryCards key={index} data={data} />)}
       </div>
     </div>

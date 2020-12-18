@@ -22,20 +22,30 @@
     z-index: 999;
 }
 
+/* modal open animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .sign-in-modal {
     min-height: 65%;
     max-height: 65%;
     min-width: 30%;
-    max-width: 30%;
 
     display: flex;
     flex-direction: column;
-    flex: 1;
 
     background-color: white;
     border-radius: 4px;
     padding: 2rem;
     z-index: 1000;
+    animation: fadeIn .3s linear;
 }
 
 .header {
@@ -159,11 +169,17 @@
 
     margin-top: 1rem;
 }
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
 .member-check-text {
     margin-right: 1rem;
     color: gray;
 }
 .sign-up-button:hover {
+    color: black;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 1px solid black;
@@ -172,12 +188,13 @@
     transform: translateY(3px);
 }
 
+/*and (device-width : 375px)*/
 
 /*mobile 화면 고려*/
 /* 아이폰 XS 기준 */
 /* 2436x1125px at 458ppi */
 @media only screen
-and (device-width : 375px)
+and (max-device-width : 480px)
 and (device-height : 812px)
 and (-webkit-device-pixel-ratio : 3) {
     .sign-in-modal {

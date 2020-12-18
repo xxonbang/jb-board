@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Form } from 'react-bootstrap';
 import './sign-in-modal.css'
 import * as AiIcons from "react-icons/ai";
@@ -7,6 +8,39 @@ import KakaoLogo from '../../assets/image/kakao-logo.svg';
 import GoogleLogo from '../../assets/image/google-logo.png';
 
 function SignInModal({ isModalOpen, close }) {
+
+  // form input values state
+  const [signInData, setSignInData] = useState(
+    {
+      signInData: {
+        id: '',
+        password: ''
+      }
+    }
+  );
+  // checkbox state
+  const [isChecked, setCheckBox] = useState(false);
+
+  // form input validation
+  const handleSubmit = (event) => {
+
+    // submit 후 입력 된 data 확인을 위해 event 일시정지용 dummy part
+    event.preventDefault();
+    event.stopPropagation();
+    // submit 후 입력 된 data 확인을 위해 event 일시정지용 dummy part
+  };
+
+  // form input values gathering
+  const onInput = (e) => {
+    setSignInData(prevState => {
+      const key = e.target.id;
+      let signInData = Object.assign({}, prevState.signInData);
+      signInData[key] = e.target.value;
+      return { signInData };
+    });
+    console.log(signInData);
+  }
+
   return (
     <>
       <div className='modal-wrapper'>
@@ -20,16 +54,16 @@ function SignInModal({ isModalOpen, close }) {
             </div>
           </div>
           <div className='body'>
-            <Form>
-              <Form.Group>
-                <Form.Control type="email" placeholder="Enter email" />
+            <Form onSubmit={handleSubmit}>
+              <Form.Group controlId="id">
+                <Form.Control required placeholder="ID" onChange={onInput} autoComplete="off" />
               </Form.Group>
-              <Form.Group>
-                <Form.Control type="password" placeholder="Password" />
+              <Form.Group controlId="password">
+                <Form.Control required type="password" placeholder="PASSWORD" onChange={onInput} autoComplete="off" />
               </Form.Group>
               <div className='checkbox-row'>
-                <Form.Group>
-                  <Form.Check type="checkbox" label="로그인 유지하기" />
+                <Form.Group controlId="checkbox">
+                  <Form.Check type="checkbox" label="로그인 유지하기" onClick={() => setCheckBox(!isChecked)} />
                 </Form.Group>
                 <div className='find-id-pw'>아이디/비밀번호 찾기</div>
               </div>
@@ -41,7 +75,7 @@ function SignInModal({ isModalOpen, close }) {
             </Form>
           </div>
           <div className='footer'>
-            <span className='member-check-text'>회원이 아니신가요?</span><div className='sign-up-button'>회원가입</div>
+            <span className='member-check-text'>회원이 아니신가요?</span><Link to='/signup' className='sign-up-button' onClick={close}>회원가입</Link>
           </div>
         </div>
         {/*dimmed background*/}

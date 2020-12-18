@@ -32,6 +32,9 @@
       <change afterPath="$PROJECT_DIR$/../hist-message/src/pages/home/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hist-message/src/parts/footer/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hist-message/src/parts/header/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/signup/Signup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ps-board/src/pages/home/cate-cards.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ps-board/src/pages/home/mock-card-data.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/.idea/.gitignore" afterDir="false" />
@@ -46,8 +49,25 @@
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/database/test1.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/etc/test1.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xxonbang-gatsby/content/blog/javascript/test1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SidebarData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/SidebarData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in-modal/sign-in-modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/board-template/board-template.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/board-template/board-template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/board-template/board-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/board-template/board-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/board-template/mock-post-list-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/board-template/mock-post-list-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/board/Humor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/board/Humor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/post-view/mock-post-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/post-view-template/mock-post-view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/post-view/post-view.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/post-view-template/post-view.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/post-view/post-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/post-view-template/post-view.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xxonbang.github.io/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xxonbang.github.io/.idea/workspace.xml" afterDir="false" />
@@ -68,8 +88,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -86,7 +106,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/signup" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,16 +118,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/signup" />
       <recent name="$PROJECT_DIR$/src/assets/image" />
       <recent name="$PROJECT_DIR$/src/pages/home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/navbar" />
+      <recent name="$PROJECT_DIR$/src/pages/template" />
       <recent name="$PROJECT_DIR$/src/assets/image" />
       <recent name="$PROJECT_DIR$/src/pages/board" />
       <recent name="$PROJECT_DIR$/src/pages/home" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.start-debug">
+    <configuration name="start-debug" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
@@ -122,6 +148,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.start-debug" />
+      <item itemvalue="npm.start" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -139,7 +169,8 @@
       <workItem from="1607930234810" duration="9567000" />
       <workItem from="1608009432710" duration="2609000" />
       <workItem from="1608012967353" duration="3081000" />
-      <workItem from="1608017942921" duration="11151000" />
+      <workItem from="1608017942921" duration="40704000" />
+      <workItem from="1608188266350" duration="20186000" />
     </task>
     <servers />
   </component>
@@ -157,5 +188,36 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/signup/Signup.js</url>
+          <line>29</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/signup/Signup.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/signup/Signup.js</url>
+          <line>26</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JavascriptDebugType">
+        <watch expression="this.state" language="JavaScript" />
+        <watch expression="this.state.formData[text]" language="JavaScript" />
+        <watch expression="this.state.isError[text]" language="JavaScript" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { SideBarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
-import SignInModal from './sign-in-modal/sign-in-modal';
+import SignInModal from '../sign-in-modal/sign-in-modal';
 
 function Navbar() {
 
