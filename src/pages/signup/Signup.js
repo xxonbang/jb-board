@@ -44,6 +44,10 @@ class Signup extends React.Component{
   //TODO: ※ 비교할 때, state 값과 state 값을 비교하면 새로 변경 된 state 값은 lifecycle 및 render 시점 때문에 변경 이전의 값을 가져옴
   //TODO: ※ setState 는 모든 함수가 실행되고 나서 마지막에 실행되는 것처럼 보임
   //TODO: ※ 지금 막 입력한 값(입력은 되었으나 아직 state 에 저장되기 전 상태임)을 가지고 비교해야 실제로 지금 막 입력한 값을 사용할 수 있음
+
+  //TODO: ※ 함수의 내용 중 최상단에 특정 state 를 setState 하게 해두었더라도 그 함수가 끝날떄까지 setState 가 완료되지 않는 것으로 보임 -> 비동기식이라
+
+  // 비밀번호 동일여부 validation
   pwValidator = (inputData) => {
     this.setState({formData: {...this.state.formData, password: inputData}});
     if (this.state.formData.checkPassword) {
@@ -55,13 +59,35 @@ class Signup extends React.Component{
     }
   }
 
+  // 비밀번호 확인 동일여부 validation
   pwCheckValidator = (inputData) => {
     this.setState({formData: {...this.state.formData, checkPassword: inputData}});
     if (inputData !== this.state.formData.password) {
-      console.log('pw not matched')
       this.setState({isError: {...this.state.isError, checkPassword: false}});
     } else if (inputData === this.state.formData.password) {
       this.setState({isError: {...this.state.isError, checkPassword: true}});
+    }
+  }
+
+  // 휴대전화번호 validation
+  phoneNumberValidator = (inputData) => {
+    this.setState({formData: {...this.state.formData, phoneNumber: inputData}});
+    const phoneNumberPattern = new RegExp(/^\d{3}-\d{3,4}-\d{4}$/);
+    if (!phoneNumberPattern.test(inputData)) {
+      this.setState({isError: {...this.state.isError, phoneNumber: false}});
+    } else {
+      this.setState({isError: {...this.state.isError, phoneNumber: true}});
+    }
+  }
+
+  // 이메일 validation
+  emailValidator = (inputData) => {
+    this.setState({formData: {...this.state.formData, email: inputData}});
+    const emailPattern = new RegExp(/^[\w-]+(\.[\w-]+)*@([a-z0-9-]+(\.[a-z0-9-]+)*?\.[a-z]{2,6}|(\d{1,3}\.){3}\d{1,3})(:\d{4})?$/);
+    if (!emailPattern.test(inputData)) {
+      this.setState({isError: {...this.state.isError, email: false}});
+    } else {
+      this.setState({isError: {...this.state.isError, email: true}});
     }
   }
 
@@ -76,21 +102,19 @@ class Signup extends React.Component{
 //   this.setState({isError: {...this.state.isError, checkPassword: true}});
 // }
 
-  // pwValidator = (inputData) => {
-  //   this.setState({formData: {...this.state.formData, checkPassword: inputData}});
-  //   if (inputData !== this.state.formData.password) {
-  //     console.log('pw not matched')
-  //     this.setState({isError: {...this.state.isError, checkPassword: false}});
-  //   } else {
-  //     this.setState({isError: {...this.state.isError, checkPassword: true}});
-  //   }
-  // }
-
   test = () => {
     console.log(this.state);
   }
 
-  handleSubmit = () => {}
+  handleSubmit = (event) => {
+    if (!(this.state.isError.checkPassword && this.state.isError.phoneNumber && this.state.isError.email)) {
+      event.preventDefault();
+      alert('올바른 값을 입력해 주세요.');
+      return false;
+    }
+    alert('success!');
+    this.props.history.push('/');
+  }
 
   render() {
     return (
@@ -106,6 +130,7 @@ class Signup extends React.Component{
                   type="text"
                   className="form-control"
                   id="id"
+                  name="id"
                   placeholder="아이디"
                 />
               </div>
@@ -114,9 +139,9 @@ class Signup extends React.Component{
                   type="text"
                   className="form-control"
                   id="password"
+                  name="password"
                   placeholder="비밀번호"
                   onChange={e => this.pwValidator(e.target.value)}
-                  // onChange={e => this.setState({formData: {password: e.target.value}})}
                   autoComplete="off"
                 />
               </div>
@@ -124,8 +149,8 @@ class Signup extends React.Component{
                 <input
                   type="text"
                   className={`form-control ${this.inputClassNameHelper(this.isInputDataValid('checkPassword'))}`}
-                  // className={`form-control ${this.state.errors.includes('checkPassword') ? 'is-invalid' : 'is-valid'}`}
                   id="checkPassword"
+                  name="checkPassword"
                   placeholder="비밀번호 확인"
                   onChange={e => this.pwCheckValidator(e.target.value)}
                   autoComplete="off"
@@ -136,23 +161,29 @@ class Signup extends React.Component{
                   type="text"
                   className="form-control"
                   id="nickname"
+                  name="nickname"
                   placeholder="닉네임(별명)"
                 />
               </div>
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control"
+                  className={`form-control ${this.inputClassNameHelper(this.isInputDataValid('phoneNumber'))}`}
                   id="phoneNumber"
+                  name="phoneNumber"
                   placeholder="휴대전화번호"
+                  onChange={e => this.phoneNumberValidator(e.target.value)}
+                  autoComplete="off"
                 />
               </div>
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control"
+                  className={`form-control ${this.inputClassNameHelper(this.isInputDataValid('email'))}`}
                   id="email"
+                  name="email"
                   placeholder="이메일주소"
+                  onChange={e => this.emailValidator(e.target.value)}
                 />
               </div>
               <div className='button-area'>
