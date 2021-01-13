@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/signup/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/template/board-template/board-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/board-template/board-template.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
       <recent name="$PROJECT_DIR$/src/pages/home" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.start-debug">
+  <component name="RunManager" selected="npm.start">
     <configuration name="start-debug" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -102,6 +104,10 @@
       <workItem from="1608188266350" duration="20186000" />
       <workItem from="1608280699295" duration="290000" />
       <workItem from="1608281004153" duration="4893000" />
+      <workItem from="1608681905602" duration="16000" />
+      <workItem from="1608681943546" duration="4225000" />
+      <workItem from="1609118715180" duration="590000" />
+      <workItem from="1610337802860" duration="9515000" />
     </task>
     <servers />
   </component>

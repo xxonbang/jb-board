@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import './Signup.css'
 import {Button, Form} from "react-bootstrap";
 
@@ -102,8 +103,31 @@ class Signup extends React.Component{
 //   this.setState({isError: {...this.state.isError, checkPassword: true}});
 // }
 
-  test = () => {
+  stateTest = () => {
     console.log(this.state);
+  }
+
+  axiosSignupTest = async () => {
+    axios({
+      method: 'GET',
+      url: '/signup'
+      // url: '/signup'
+    }).then((res) => {
+      console.log(res);
+    }).catch((error) => {
+      console.log(error);
+    })
+  }
+
+  axiosUserTest = async () => {
+    axios({
+      method: 'GET',
+      url: '/users'
+    }).then((res) => {
+      console.log(res);
+    }).catch((error) => {
+      console.log(error);
+    })
   }
 
   handleSubmit = (event) => {
@@ -190,7 +214,9 @@ class Signup extends React.Component{
                 <Button variant="dark" type="submit">회원가입</Button>
               </div>
             </Form>
-            <button onClick={this.test}>test</button>
+            <button onClick={this.stateTest}>stateTest</button>
+            <button onClick={this.axiosSignupTest}>axiosSignupTest</button>
+            <button onClick={this.axiosUserTest}>axiosUserTest</button>
           </div>
         </div>
       </div>
