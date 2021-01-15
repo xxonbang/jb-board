@@ -4,10 +4,10 @@
     <list default="true" id="8611fd7f-289a-42a7-93a9-e594ed5d289a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/signup/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/board/Humor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/board/Humor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/template/board-template/board-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/board-template/board-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/template/post-view-template/post-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/template/post-view-template/post-view.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <recent name="$PROJECT_DIR$/src/pages/home" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="JavaScript Debug.start-debug">
     <configuration name="start-debug" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -107,7 +107,12 @@
       <workItem from="1608681905602" duration="16000" />
       <workItem from="1608681943546" duration="4225000" />
       <workItem from="1609118715180" duration="590000" />
-      <workItem from="1610337802860" duration="9515000" />
+      <workItem from="1610337802860" duration="9622000" />
+      <workItem from="1610581516187" duration="3385000" />
+      <workItem from="1610602290440" duration="4062000" />
+      <workItem from="1610606963003" duration="142000" />
+      <workItem from="1610607259957" duration="867000" />
+      <workItem from="1610608552360" duration="8254000" />
     </task>
     <servers />
   </component>
@@ -132,10 +137,21 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="JavascriptDebugType">
-        <watch expression="this.state" language="JavaScript" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/template/post-view-template/post-view.js</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/template/post-view-template/post-view.js</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
