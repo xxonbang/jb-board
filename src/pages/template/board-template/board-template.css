@@ -30,6 +30,19 @@
 /*게시글 list div*/
 .post-list {}
 
+.post-list-header {
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr 1fr;
+    justify-items: center;
+
+    font-weight: bold;
+    border-top: solid 1px #3C3C3C;
+    border-bottom: solid 1px #3C3C3C;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 /*게시글 제목*/
 .post-title {
     list-style: none;
@@ -41,6 +54,22 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.post-grid-container {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.post-detail-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.write-button-container {
+    display: flex;
+    margin-left: auto;
 }
 
 /*mobile 화면 고려*/
