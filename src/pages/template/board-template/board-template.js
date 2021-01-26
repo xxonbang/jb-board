@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './board-template.css'
 import axios from "axios";
+import "moment/locale/ko";
 import moment from "moment";
 
 function BoardTemplate({ boardCate }) {
@@ -12,7 +13,8 @@ function BoardTemplate({ boardCate }) {
 
   // post 등록 시간이 1일 이전 일 경우 'yyyy-MM-dd' 포멧으로 날짜 리턴, 아닐 경우 'xx 전' type 으로 리턴
   const calPostTime = (item) => {
-    const postRegTime = moment(postList[0].regTime);
+    console.log(moment(item.regTime).format("yyyy-MM-dd HH:mm:ss"));
+    let postRegTime = moment(item.regTime);
     let diffTime = postRegTime.diff(moment(), 'days');
     if (diffTime <= -1) {
       // console.log(diffTime);
