@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import './board-template.css'
 import axios from "axios";
@@ -17,33 +17,29 @@ function BoardTemplate({ boardCate }) {
     let postRegTime = moment(item.regTime);
     let diffTime = postRegTime.diff(moment(), 'days');
     if (diffTime <= -1) {
-      // console.log(diffTime);
-      // console.log('1111111111');
       return moment(item.regTime).format('YYYY-MM-DD');
     } else {
-      // console.log(diffTime);
-      // console.log('222222222');
-      // return '2222222';
       return moment(item.regTime).fromNow();
     }
   }
 
-  useEffect(() => {
-    async function getPostList (boardCate) {
-      try {
-        const result = await axios.get(`/board/${boardCate}/searchAll`);
-        if (!loading) setPostList(result.data);
-      } catch (error) {
-        console.log(error);
-      }
+  const getPostList = useCallback(async () => {
+    try {
+      const result = await axios.get(`/board/${boardCate}/searchAll`);
+      if (!loading) setPostList(result.data);
+    } catch (error) {
+      console.log(error);
     }
-    getPostList(boardCate)
+  }, [boardCate, loading]);
+
+  useEffect(() => {
+    getPostList()
       .then(() => console.log('load post success!'))
       .catch((error) => console.log(error));
     return () => {
       setloading(true);
     }
-  }, []);
+  }, [getPostList]);
 
   // const searchTest = () => {
   //   axios({

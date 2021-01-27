@@ -1,33 +1,32 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import './post-view.css'
 import * as FiIcons from "react-icons/fi";
 import axios from "axios";
-
-import mockPostViewData from './mock-post-view'
 
 function PostView({ match }) {
 
   const [upCount, setUpCount] = useState(100);
   const [downCount, setDownCount] = useState(20);
-  const [postNo, setPostNo] = useState(match.params.postNo);
   const [post, setPost] = useState({});
   const [loading, setloading] = useState(false);
 
-  const getPost = async (postNo) => {
+  const getPost = useCallback(async () => {
     try {
-      const result = await axios.get('/board/humor/search', {params: {postNo: postNo}});
+      const result = await axios.get('/board/humor/search', {params: {postNo: match.params.postNo}});
       if (!loading) setPost(result.data[0]);
     } catch (error) {
       console.log(error);
     }
-  }
+  }, [match, loading]);
 
   useEffect(() => {
-    getPost(postNo);
+    getPost()
+      .then(() => console.log('load post success!'))
+      .catch((error) => console.log(error));
     return () => {
       setloading(true);
     }
-  }, [])
+  }, [getPost])
 
   const thumbsUp = () => {
     setUpCount(upCount + 1);
