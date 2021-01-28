@@ -26,6 +26,7 @@ function BoardTemplate({ boardCate }) {
   const getPostList = useCallback(async () => {
     try {
       const result = await axios.get(`/board/${boardCate}/searchAll`);
+      // const result = await axios.get(`/board/${boardCate}/searchAll`);
       if (!loading) setPostList(result.data);
     } catch (error) {
       console.log(error);
