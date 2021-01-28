@@ -10,6 +10,8 @@ function BoardTemplate({ boardCate }) {
   const [postList, setPostList] = useState([]);
   const [loading, setloading] = useState(false);
 
+  const HEROKU_SERVER_URL = `https://jb-board-server.herokuapp.com`;
+
 
   // post 등록 시간이 1일 이전 일 경우 'yyyy-MM-dd' 포멧으로 날짜 리턴, 아닐 경우 'xx 전' type 으로 리턴
   const calPostTime = (item) => {
@@ -25,7 +27,7 @@ function BoardTemplate({ boardCate }) {
 
   const getPostList = useCallback(async () => {
     try {
-      const result = await axios.get(`https://jb-board-server.herokuapp.com/board/${boardCate}/searchAll`);
+      const result = await axios.get(`${HEROKU_SERVER_URL}/board/${boardCate}/searchAll`);
       // const result = await axios.get(`/board/${boardCate}/searchAll`);
       if (!loading) setPostList(result.data);
     } catch (error) {

@@ -13,6 +13,8 @@ class WritePost extends React.Component  {
     }
   }
 
+  HEROKU_SERVER_URL = `https://jb-board-server.herokuapp.com`;
+
   setTitle = e => {
     const { value } = e.target;
     this.setState({
@@ -30,7 +32,7 @@ class WritePost extends React.Component  {
 
   createPost = async () => {
     try {
-      const result = await axios.post(`/board/humor/upload`, this.state);
+      const result = await axios.post(`${this.HEROKU_SERVER_URL}/board/humor/upload`, this.state);
       console.log(result);
       this.props.history.push(`/board/humor`)
     } catch (error) {

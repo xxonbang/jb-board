@@ -10,9 +10,13 @@ function PostView({ match }) {
   const [post, setPost] = useState({});
   const [loading, setloading] = useState(false);
 
+
+  const HEROKU_SERVER_URL = `https://jb-board-server.herokuapp.com`;
+
+
   const getPost = useCallback(async () => {
     try {
-      const result = await axios.get('/board/humor/search', {params: {postNo: match.params.postNo}});
+      const result = await axios.get(`${HEROKU_SERVER_URL}/board/humor/search`, {params: {postNo: match.params.postNo}});
       if (!loading) setPost(result.data[0]);
     } catch (error) {
       console.log(error);
