@@ -21,7 +21,7 @@ function PostView({ match }) {
     } catch (error) {
       console.log(error);
     }
-  }, [match, loading]);
+  }, [match, loading, HEROKU_SERVER_URL]);
 
   useEffect(() => {
     getPost()

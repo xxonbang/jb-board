@@ -33,7 +33,7 @@ function BoardTemplate({ boardCate }) {
     } catch (error) {
       console.log(error);
     }
-  }, [boardCate, loading]);
+  }, [boardCate, loading, HEROKU_SERVER_URL]);
 
   useEffect(() => {
     getPostList()
